@@ -13,8 +13,8 @@ export class ConstraintsComponent  implements AfterViewInit{
   @ViewChild('one') d1:ElementRef;
 
 ngAfterViewInit(){
-  // this.paragraphToLoad = 'Content has been changed'
-  // this.htmlToAdd = '<div class="two">two</div>';
+  this.paragraphToLoad = 'Content has been changed'
+  this.htmlToAdd = '<div class="two">two</div>';
   // this.d1.nativeElement.insertAdjacentHTML('beforeend', '<div class="two">two</div>');
   }
 
