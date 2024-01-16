@@ -34,7 +34,7 @@ export class ProductsComponent implements OnInit{
       }
     }
   ];
-  private seoService = inject(SeoService);
+  private seoService = inject(SeoService); // Angular 17 way to inject services, you can do it using constructor as well.
   
   ngOnInit(): void {
     this.seoService.createCannonicalTag();
