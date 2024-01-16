@@ -1,0 +1,34 @@
+<h1>Show Hydration Constraints</h1>
+
+<h3 class="mt-5">Some simple examples of direct-dom-manipulation below-</h3>
+<pre><strong>Note -</strong> <em>Open console to see the logged errors.</em></pre>
+<p [innerHTML]="paragraphToLoad"></p>
+
+<div class="one" [innerHtml]="htmlToAdd"></div>
+
+<!-- <div class="one" #one></div> -->
+
+<hr>
+
+<h3>Valid HTML Structure</h3>
+<pre>DOM mismatch error during hydration.</pre>
+<p>There are a few cases where if you have a component template that does not have valid HTML structure, this could result in a DOM mismatch error during hydration.
+    <br/>As an example, here are some of the most common cases of this issue.
+</p>
+
+<ul>
+    <li><code>table</code> without <code>tbody</code></li>
+    <li><code>div</code> inside a <code>p</code></li>
+    <li><code>a</code> inside <code>h1</code></li>
+    <li><code>a</code> inside another <code>a</code></li>
+</ul>
+<pre>Uncomment below code to blow your application.</pre>
+<code>&lt;p&gt; &lt;div&gt; div inside a P tag &lt;/div&gt; &lt;/p&gt;</code>
+
+<!-- This one here below code will be uncommented -->
+<!-- <p><div>div inside a p tag</div></p> -->
+
+
+<div>
+    <a href="https://angular.dev/guide/hydration" target="_blank">https://angular.dev/guide/hydration</a>
+</div>
